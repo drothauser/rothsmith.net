@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>NT502-Why-The-Fishhook</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#why-the-fishhook" id="toc-why-the-fishhook">Why the
+fishhook?</a>
+<ul>
+<li><a href="#matthew-1724-27" id="toc-matthew-1724-27">Matthew
+17:24-27</a>
+<ul>
+<li><a href="#introduction" id="toc-introduction">Introduction</a></li>
+<li><a href="#the-temple-tax" id="toc-the-temple-tax">The Temple
+Tax</a></li>
+<li><a href="#jesus-teaches-peter-about-the-temple-tax"
+id="toc-jesus-teaches-peter-about-the-temple-tax">Jesus Teaches Peter
+About the Temple Tax</a></li>
+<li><a href="#the-offensive-fishhook-1727"
+id="toc-the-offensive-fishhook-1727">The <em>Offensive</em> Fishhook
+(17:27)</a></li>
+</ul></li>
+<li><a href="#conclusion" id="toc-conclusion">Conclusion</a></li>
+</ul></li>
+<li><a href="#bibliography" id="toc-bibliography">BIBLIOGRAPHY</a></li>
+</ul>
+</nav>
+<h1 id="why-the-fishhook">Why the fishhook?</h1>
+<p>The term fishhook is found in only a few places in the entire Bible<a
+href="#fn1" class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a> and just once in the New Testament
+(Matt. 17:27). Readers might tend to overlook the significance of what
+is seemingly a religiously neutral device used to catch fish. They know
+what a fishhook is and its purpose. No big deal, they might think,
+oblivious to the rich meaning behind the word, both literally and
+metaphorically. The intent of this paper is to take a closer look at
+this word as it is used in Matthew 17:24-27 and showcase its
+significance within the narrative.</p>
+<h2 id="matthew-1724-27">Matthew 17:24-27</h2>
+<h3 id="introduction">Introduction</h3>
+<p>The book of Matthew is the only book in the New Testament that
+mentions a fishhook<a href="#fn2" class="footnote-ref" id="fnref2"
+role="doc-noteref"><sup>2</sup></a>. It is used in the episode about
+Jesus and Peter and the temple tax found in Matt. 17:24-27<a href="#fn3"
+class="footnote-ref" id="fnref3"
+role="doc-noteref"><sup>3</sup></a>:</p>
+<blockquote>
+<p>When they came to Capernaum, the collectors of the two-drachma tax
+went up to Peter and said, “Does your teacher not pay the tax?”  He
+said, “Yes.” And when he came into the house, Jesus spoke to him first,
+saying, “What do you think, Simon? From whom do kings of the earth take
+toll or tax? From their sons or from others?”  And when he said, “From
+others,” Jesus said to him, “Then the sons are free. However, not to
+give offense to them, go to the sea and cast a hook and take the first
+fish that comes up, and when you open its mouth you will find a shekel.
+Take that and give it to them for me and for yourself.”</p>
+</blockquote>
+<p>Though this pericope is only four verses, it reveals a quintessential
+Christological dimension in which the mysterious fishhook plays a vital
+role in the conclusion of the story (Matt. 17:27). However, before one
+can answer, “why the fishhook?” it is necessary to explore the
+religio-historical context of the story. First, it is important to
+understand why this story is uniquely Matthean and not included in the
+other Synoptics<a href="#fn4" class="footnote-ref" id="fnref4"
+role="doc-noteref"><sup>4</sup></a>. If Matthew is the author of this
+gospel, he was Levi, the tax collector. As a tax-collecting
+professional, this situation would undoubtedly interest him.
+Furthermore, many scholars believe he was writing for a Jewish audience
+knowledgeable about the Jewish law concerning the temple tax and why it
+was necessary.</p>
+<p>To set the stage, Matthew begins the story with Jesus and the
+disciples arriving in Capernaum after several very significant events in
+which Peter is a primary actor. First, Peter declares that Jesus is the
+Messiah and Jesus warns them in no uncertain terms to keep that quiet
+(Matt. 16:16,20; Mark 8:29,30 par.; Luke 9:20,21 par.). Then on three
+occasions, Jesus tells his disciples he will be delivered into the hands
+of men, be killed, and on the third day, be raised to life (Matt. 16:21;
+17:22-23 par.; 20:17-19 par.). On the first occasion, Peter rebukes
+Jesus for his lugubrious vaticination<a href="#fn5" class="footnote-ref"
+id="fnref5" role="doc-noteref"><sup>5</sup></a>, after which Jesus
+returns the favor with a blistering attack labeling him “Satan.”
+Furthermore, he accuses him of having more concern with the things of
+man and not of God and for being a <em>hindrance</em> to him (Matt.
+16:22-23). Note that the underlying Greek word for hindrance is
+σκάνδαλον [skandalon] (a stumbling block). This word will play a
+prominent role in unfolding the meaning of the fishhook later in the
+temple tax narrative (Matt. 17:27). Lastly, Jesus is transfigured, and
+again Jesus commands the disciples not to tell anyone what they saw
+until the Son of Man was raised from the dead (Matt. 17:1-9; Mark 9:2-8
+par.; Luke 9:28-36 par.).</p>
+<p>With these events and admonitions in view, the temple tax collectors
+in Capernaum approached Peter, knowing very well that he was one of
+Jesus’s disciples. They asked if Jesus pays the temple tax (Matt.
+27:24). In typical Petrine fashion, Peter impulsively answers in the
+affirmative, perhaps in an effort to protect Jesus’s honor as a
+law-abiding Jew or that he had great faith in his master to come up with
+tax<a href="#fn6" class="footnote-ref" id="fnref6"
+role="doc-noteref"><sup>6</sup></a>.</p>
+<h3 id="the-temple-tax">The Temple Tax</h3>
+<p>At this point in the story, it is essential to examine the history of
+the temple tax, what it represents, and its necessity. The temple tax
+finds its origins in pre-temple times as a census tax instituted as part
+of the Mosaic Law. Exodus 30:11-16 explicates the law as follows:</p>
+<blockquote>
+<p>The Lord said to Moses, “When you take the census of the people of
+Israel, then each shall give a ransom for his life to the Lord when you
+number them, that there be no plague among them when you number them.
+ Each one who is numbered in the census shall give this: half a shekel
+according to the shekel of the sanctuary (the shekel is twenty gerahs),
+half a shekel as an offering to the Lord. Everyone who is numbered in
+the census, from twenty years old and upward, shall give the Lord’s
+offering. The rich shall not give more, and the poor shall not give
+less, than the half shekel, when you give the Lord’s offering to make
+atonement for your lives. You shall take the atonement money from the
+people of Israel and shall give it for the service of the tent of
+meeting, that it may bring the people of Israel to remembrance before
+the Lord, so as to make atonement for your lives.”</p>
+</blockquote>
+<p>The divine justification for this law cannot be understated. This tax
+represents what amounts to be no less than a ransom<a href="#fn7"
+class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> and
+atonement<a href="#fn8" class="footnote-ref" id="fnref8"
+role="doc-noteref"><sup>8</sup></a> for one’s life<a href="#fn9"
+class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a>. It
+dictates that an Israelite man twenty years old and older must give an
+offering of half a shekel to the Lord. This offering represented a
+ransom for divine protection from plagues (God’s wrath and judgment of
+sin). The temple priests used this revenue for the upkeep and operations
+of the tent of meeting (tabernacle), whose primary purpose was to
+conduct ongoing sacrifices<a href="#fn10" class="footnote-ref"
+id="fnref10" role="doc-noteref"><sup>10</sup></a>. Implicit in the
+monetary ransom given to the tabernacle is the act of earning it. The
+Israelite man must work for the money in some fashion, which symbolizes
+a form of sacrifice or atonement.</p>
+<h3 id="jesus-teaches-peter-about-the-temple-tax">Jesus Teaches Peter
+About the Temple Tax</h3>
+<p>Returning to Jesus and Peter’s conversation, Jesus, touching his
+divine nature, knew exactly what transpired between Peter and the tax
+collectors and before Peter could even say a word asked him a rhetorical
+question, “What do you think, Simon? From whom do kings of the earth
+take toll or tax? From their sons or from others?” (Matt 17:25)<a
+href="#fn11" class="footnote-ref" id="fnref11"
+role="doc-noteref"><sup>11</sup></a>. At that time, the kings of the
+earth (e.g., Roman rulers) did not require their families to pay taxes.
+Peter answers Jesus, “from the others.”<a href="#fn12"
+class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a>
+Jesus validates Peter’s answer, responding, “So the sons are free.” The
+point Jesus was making is that the king nor his children pay taxes in
+kingdoms, but the others do. At the same time, Jesus was forecasting the
+way it would be in the kingdom he is inaugurating, but that time has not
+yet arrived in its eschatological fullness. (Perhaps that is one of the
+reasons Jesus exhorted the disciples not to tell anyone about the
+miraculous signs they had witnessed heretofore.) In asserting that sons
+are free, Jesus is illustrating that just like in an earthly kingdom
+whose king and family is exempt from paying tribute, so are the sons of
+the heavenly kingdom who are not related of blood (John 1:13) but
+<em>through</em> the blood of its king (Eph. 1:7,13, Col. 1:20).
+Although Peter had recently confessed that Jesus is the Son of the
+living God (Matt. 16:16), it would not be until he employed a fishhook
+that he would begin to comprehend how sonship is wrought in the Heavenly
+Kingdom.</p>
+<p>Jesus goes on to say, “However, not to cause offense to them, …,
+render the tax for the both of us” (Matt. 17:27). At this point in the
+narrative, it is critical to probe what Jesus meant by not wanting to
+cause offense and how that relates to the mysterious object that is the
+subject of this paper – the fishhook.</p>
+<h3 id="the-offensive-fishhook-1727">The <em>Offensive</em> Fishhook
+(17:27)</h3>
+<p>In the original Greek of this passage, the word for <em>offense</em>
+is σκανδαλίζομαι, which when transliterated is skandalizó, from which we
+get the English word <em>scandal</em>. The word means to lay a snare
+for, set a trap for, cause to stumble or fall, or give offense or
+scandal to anyone.<a href="#fn13" class="footnote-ref" id="fnref13"
+role="doc-noteref"><sup>13</sup></a></p>
+<p>Jesus knew that refusal to pay the tax would be scandalous. The time
+was not right for him to become a stumbling block to the Jews (1 Cor.
+1:23), for he had not yet completed his messianic mission, which
+included fulfilling every jot and tittle of the Law (Matt. 5:17-18),
+even paying the temple tax (Ex. 30:11-16). Jesus, the only begotten of
+the Father, is certainly exempt from the temple tax, for he is the
+temple<a href="#fn14" class="footnote-ref" id="fnref14"
+role="doc-noteref"><sup>14</sup></a>. However, at this pre-resurrection
+stage of his ministry, that truth would not have been understood. If the
+disciples could not fully grasp Jesus’s person and mission, certainly
+the tax collectors and Jews could not be able to either. Nonetheless, it
+was not Jesus’s intent to “lay a snare” for the Jews and cause them to
+stumble into sin through their present ignorance and spiritual
+blindness. Jesus had another target in mind.</p>
+<p>Jesus then gives Peter an assignment that would not only solve the
+immediate matter at hand but also teach him a lesson that mere words
+could never impart. He instructs him to go to the sea, cast a hook<a
+href="#fn15" class="footnote-ref" id="fnref15"
+role="doc-noteref"><sup>15</sup></a>, take the first fish that comes up,
+pull the coin from its mouth, and use that to pay the taxes. In this
+way, rather than tripping up the people by truths that at that time were
+beyond their grasp, Jesus instructs Peter to trip up something else by
+means of the fishhook<a href="#fn16" class="footnote-ref" id="fnref16"
+role="doc-noteref"><sup>16</sup></a>.</p>
+<p>God providentially set up the environment necessary for Peter to
+apply his skills as a professional fisherman to toil for (i.e., work
+for, sacrifice, atone) the tax money (ransom)<a href="#fn17"
+class="footnote-ref" id="fnref17"
+role="doc-noteref"><sup>17</sup></a>.</p>
+<p>Throughout the gospels, Peter customarily employs a net to catch as
+many fish as possible at one time to maximize profit. However, this time
+Jesus instructs him to use a line and hook to catch a specific fish for
+a specific reason. To discover that reason, it is necessary to analyze
+the hook-fishing technique both literally and metaphorically.</p>
+<p>The literal activity of hook-fishing generally involves spiking a
+piece of bait on a hook<a href="#fn18" class="footnote-ref" id="fnref18"
+role="doc-noteref"><sup>18</sup></a>. The hook’s true nature is
+concealed by the bait that is hung on it. The objective of both the
+fisherman and the fish is the same – a meal. When considered
+metaphorically, the fisherman represents a type of deceiver, the hook
+and bait represent a trap, and the fish represents a dupe. The objective
+of the deceiver and the deceived is the same – to obtain something it
+desires. The sea represents the context where the fishing drama takes
+place.</p>
+<h4 id="a-tale-of-two-fishermen">A Tale of Two Fishermen </h4>
+<p>Using these metaphors, one can view the fall of man and his salvation
+as two allegorical fishing stories: one tragedy, the other comedy.</p>
+<p>In the narrative of The Fall (Gen. 3), Satan, the <em>adversary</em>,
+manifests himself in the form of a serpent (Gen. 3:1)<a href="#fn19"
+class="footnote-ref" id="fnref19" role="doc-noteref"><sup>19</sup></a>.
+He takes on the role of a wicked fisherman using his deceptive craft to
+snatch for himself God’s good creation (Gen 1:25) by preying upon its
+crowning jewel, even Man (Gen. 1:27)<a href="#fn20" class="footnote-ref"
+id="fnref20" role="doc-noteref"><sup>20</sup></a>. To that end, he
+cunningly prepares his fishhook by affixing the bait of faux divinity
+upon the hook of sin, darkness, and death. Like a skilled angler coaxing
+a fish to his fatal hook disguised with juicy bait, he casts his
+fishhook into the Edenic tranquility of the Garden to deceive Adam and
+Eve (and by extension, their progeny) into believing his lie through the
+manipulation of their nascent free will. Man then <em>freely</em> takes
+the bait and finds himself enslaved to the forces of sin, death, and the
+adversary and tragically estranged from God.</p>
+<p>The same allegorical fishing theme applies when considering how God
+reverses the effects of The Fall to deliver his people from the bondage
+to sin and its side effects. In this, we see the mysterious unity and
+diversity of the Godhead at work in the role of a fisherman who
+figuratively takes on the form of a fishhook tied to a line thrown into
+the sea. In Jewish categories, the sea represents a chaotic, shadowy
+underworld where Yahweh’s cosmic enemies dwell in the form of a sea
+serpent or dragon called Leviathan or Rahab<a href="#fn21"
+class="footnote-ref" id="fnref21" role="doc-noteref"><sup>21</sup></a>.
+As a metaphoric fishhook, Jesus’s human nature represents the bait, and
+his divine nature represents the hook. When seen together, the baited
+hook symbolizes the Cross of Christ. The fish represents Satan, that
+Leviathan only God can pull in with a hook (Job 41:1). Jesus’s atoning
+death and resurrection, symbolized by the coin regurgitated by the
+fish<a href="#fn22" class="footnote-ref" id="fnref22"
+role="doc-noteref"><sup>22</sup></a>, is the ransom paid for the
+redemption of his enslaved children.</p>
+<h4 id="fishhook-theory-of-atonement">Fishhook Theory of Atonement</h4>
+<p>The fourth-century bishop and theologian Gregory of Nyssa (AD c.
+335-395) used similar imagery in The Great Catechism<a href="#fn23"
+class="footnote-ref" id="fnref23" role="doc-noteref"><sup>23</sup></a>
+to formulate what became to be known as the “Fishhook Theory of
+Atonement”<a href="#fn24" class="footnote-ref" id="fnref24"
+role="doc-noteref"><sup>24</sup></a>:</p>
+<blockquote>
+<p>For since, as has been said before, the opposing power did not have a
+nature [able] to come into contact with the unalloyed presence of God
+and to withstand his naked manifestation, so that the exchange for us
+might be easily grasped by him who sought [it], <strong>the divine was
+hidden by the veil of our nature, in order that, as in the case of
+greedy fish, the hook of the divinity might be swallowed with the bait
+of the flesh</strong>, and thus when life came to dwell in death and
+light shone in the darkness, that which is understood as the opposite of
+light and life might be utterly destroyed. For it is not in the nature
+of darkness to remain in the presence of light, nor death to exist where
+life is active.<a href="#fn25" class="footnote-ref" id="fnref25"
+role="doc-noteref"><sup>25</sup></a></p>
+</blockquote>
+<p>By taking on human flesh in the form of a humble servant (Phil.
+2:6-8), Jesus became the ultimate snare and stumbling block for Satan.
+For in Satan’s eyes, this supposed Son of God was an impostor – a weak
+and disgraceful worm of a human (Ps. 22:6), with no power to save
+himself from the indignity of a crucifixion. Like the tax collectors and
+even the disciples before the resurrection, it was beyond Satan to
+fathom a Messiah whose weapon of warfare is sacrificial love<a
+href="#fn26" class="footnote-ref" id="fnref26"
+role="doc-noteref"><sup>26</sup></a>. It was also beyond Satan’s ability
+to resist exercising the wickedness so intrinsic to his nature.
+Consequently, he took the bait of Jesus’s humanity and found himself
+impaled on the hook of his divinity, unable to keep down He whom death
+could not hold (Acts 2:24).</p>
+<p>Critics of this theory<a href="#fn27" class="footnote-ref"
+id="fnref27" role="doc-noteref"><sup>27</sup></a> are uncomfortable with
+the notion that God would use such backhanded tactics as deception and
+concealment and that such actions are inconsistent with his perfect,
+moral character. For example, they recoil at the view that Jesus would
+use deceit to conceal his true identity through such stealthy methods as
+commanding his disciples not to divulge that he is the Christ, by paying
+the temple tax even though he does not have to, and feigning human
+weakness during his passion, all as ploys to deceive the devil into
+believing he was not God. Those more favorable to the theory see it as
+God using his righteous wisdom to beat the devil at his own game and
+furthermore that his methods were prudent, fair, and perfectly
+consistent with His holy nature<a href="#fn28" class="footnote-ref"
+id="fnref28" role="doc-noteref"><sup>28</sup></a>. After all, it is
+Jesus who tells his disciples, “Behold, I am sending you out as sheep in
+the midst of wolves, so be <em>wise as serpents</em> and innocent as
+doves.” (Matt. 10:16).</p>
+<h4 id="the-fishhook-strategy">The Fishhook Strategy</h4>
+<p>To free his children from the grip of Satan, sin, and death God came
+to earth not as a conquering warrior and liberator in the mold of David
+or Judas Maccabeus but rather as a suffering servant (Isa. 53).
+Paradoxically, what appeared to Satan and the fallen world to be
+foolish, weak, and mortal was, in reality, divine wisdom, omnipotence,
+and everlasting love. It is this concept that Jesus labored hard to
+teach his disciples. Indeed, he was <em>dead</em> serious when he taught
+that to be his disciples, they must deny themselves, take up their cross
+and lose their life to find it (Matt. 16:24-25; Mark 8:34-35 par.; Luke
+9:23-24 par.). This is the essence of the “fishhook strategy.” Those who
+follow Jesus will surely experience suffering akin to what it would feel
+like to be a skewered piece of live bait writhing on a barbed hook as
+they endure hostility, insults, mockery, and persecution<a href="#fn29"
+class="footnote-ref" id="fnref29" role="doc-noteref"><sup>29</sup></a>
+for the sake of the Gospel. Yet it is that very same hook (symbolized by
+the cross) that believers carry daily that incapacitates the adversary,
+leads others to salvation<a href="#fn30" class="footnote-ref"
+id="fnref30" role="doc-noteref"><sup>30</sup></a>, and prepares for them
+an eternal weight of glory without comparison (2 Cor. 4:17).</p>
+<p>One detail of the story that may go overlooked is the instruction
+Jesus gives Peter to take the “first” fish that comes up. In
+first-century Palestine, it is doubtful that Peter would hook one fish
+and throw it back. The underlying Greek word for “first” is πρῶτος
+(prōton) which is technically a superlative adjective meaning the first
+in a series involving time, space, or set<a href="#fn31"
+class="footnote-ref" id="fnref31" role="doc-noteref"><sup>31</sup></a>.
+Thus “first” implies that in addition to the coin-carrying fish, Peter
+would subsequently use the fishhook to catch other fish, no doubt to
+provide for and bless others. Applying this concept to the verse, Jesus
+represents the first person in all human history since the Fall to use
+the <em>fishhook strategy</em> to defeat evil, conquer the grave (Col.
+1:18), and bring salvation to his people. Thus, Jesus’s sacrificial life
+of servitude and suffering, ignominious death, and glorious resurrection
+is the <em>prototypical</em> pattern of life for all those who follow
+him.</p>
+<p>It is worth reiterating that it was the hook of Jesus’s intrinsic
+divinity that defeats Satan, and needless to say, divinity is not
+inherent to creatures. However, since the day of Pentecost, God
+dispenses the Holy Spirit to indwell in all those who by faith confess
+the name of Jesus. Consequently, each believer’s body is now the temple
+of the Holy Spirit (1 Cor. 6:19–20). The same Holy Spirit that empowered
+Jesus in his earthly body to endure the <em>fishhook</em> of the cross
+for the joy set before him (Heb. 12:2) is now the same power that
+enables the faithful to share in Christ’s sufferings and joyfully
+persevere in the Christian life.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>There are varying opinions about the meaning of the fishhook in
+Matthew 17:27. Whether one accepts or rejects the symbolism behind the
+hook and bait or that God would use deception like in the Fishhook
+Theory of Atonement, the imagery of the fishhook is an effective way to
+view how Jesus emptied himself, becoming like a lowly worm in the
+world’s eyes, and suffered a humiliating death <em>hooked</em> on a
+cross (Phil. 2:7-8) to pay a ransom for many (Matt. 20:26-28, 1 Tim.
+2:6).</p>
+<p>It is uncertain whether Peter understood the symbolism behind his
+fishing assignment as he hooked that shekel-bearing fish. It would not
+be until after he witnessed the resurrected Jesus that any of this would
+make sense, as evidenced by his speeches and adventures in the book of
+Acts and his epistles. For example, in 1 Peter 4:12-13, we read:</p>
+<blockquote>
+<p>Beloved, do not be surprised at the fiery trial when it comes upon
+you to test you, as though something strange were happening to you. But
+rejoice insofar as you share Christ’s sufferings, that you may also
+rejoice and be glad when his glory is revealed.” (1 Pet. 4:12-13)</p>
+</blockquote>
+<p>After the resurrection, Peter finally understood what Jesus was
+laboring so hard to teach during his earthly ministry. The Book of Acts
+details how this understanding spread to the rest of the disciples and
+to the saints of the early church.</p>
+<p>It is amazing that in God’s providence, He produced the drama of the
+temple tax for Peter to use a fishhook to teach him something that at
+the time might have been over his head, but in due time he would fully
+comprehend. Just as God commanded the prophets to act out prophecies
+symbolically, Jesus instructed Peter to literally exercise his vocation
+to teach him sacred truths that would serve him well not only in the
+present but also in his future ministry as an apostle.</p>
+<h1 id="bibliography">BIBLIOGRAPHY</h1>
+<p>(IGNTP), International Greek New Testament Project. <em>Codex
+Sinaiticus: Septuagint and New Testament. Cambridge.</em> Cambridge: The
+Codex Sinaiticus Project Board, 2012.</p>
+<p>Arnold, Clinton E. <em>Zondervan illustrated bible backgrounds
+commentary.</em> Grand Rapids, MI: Zondervan, 2019.</p>
+<p>Bettenson, Henry. <em>The Later Christian Fathers: A Selection from
+the Writings of the Fathers from St. Cyril of Jerusalem to St. Leo the
+Great. Translated by Henry Bettenson.</em> Edited by Henry Bettenson.
+Oxford: Oxford University Press, 1970.</p>
+<p>Brand, Chad, Charles Draper, Archie England, Steve Bond, E. Ray
+Clendenen, Trent C. Butler, and Bill Latta, eds. <em>Holman Illustrated
+Bible Dictionary.</em> Nashville, TN: Holman Bible Publishers, 2003.</p>
+<p>Constas, Nicholas P. "The Last Temptation of Satan: Divine Deception
+in Greek Patristic Interpretations of the Passion Narrative." <em>The
+Harvard Theological Review</em>, Apr 2004: 139-163.</p>
+<p>Denery, Dallas G. <em>The devil wins: A history of lying from the
+Garden of Eden to the enlightenment.</em> Princeton: Princeton Univ.
+Press, 2015.</p>
+<p>Easton, M. G. <em>Illustrated Bible Dictionary and Treasury of
+Biblical History, Biography, Geography, Doctrine, and Literature.</em>
+New York: Harper &amp; Brothers, 1893.</p>
+<p>Green, Ignatius. <em>Catechetical Discourse: A Handbook for
+Catechists.</em> Edited by John Begr. Yonkers, NY, 2019.</p>
+<p>Jamieson, Robert, A. R. Fausset, and David Brown. <em>Commentary
+Critical and Explanatory on the Whole Bible.</em> Vol. 2. Oak Harbor,
+WA, WA: Logos Research Systems, Inc., 1997.</p>
+<p>Jethani, Skye. <em>What If Jesus Was Serious? A Visual Guide to the
+Teachings of Jesus We Love to Ignore.</em> Chicago, IL: Moody
+Publishers, 2020.</p>
+<p>John D. Barry, David Bomar, Derek R. Brown, Rachel Klippenstein,
+Douglas Mangum, Carrie Sinclair Wolcott, Lazarus Wentz, Elliot Ritzema,
+Wendy Widder, ed. <em>The Lexham Bible Dictionary.</em> Bellingham, WA:
+Lexham Press, 2016.</p>
+<p>Kittel, Gerhard, Geoffrey W. Bromiley, and Gerhard Friedrich, eds.
+<em>Theological Dictionary of the New Testament.</em> Grand Rapids, MI:
+Eerdmans, 1964.</p>
+<p>Logos. <em>Byzantine Textform 2005, with Morphology. 2006.</em>
+Bellingham: Logos Bible Software, 2006.</p>
+<p>Louw, Johannes P, and Eugene Albert Nida. <em>Greek-English Lexicon
+of the New Testament: Based on Semantic Domains.</em> New York: United
+Bible Societies, 1996.</p>
+<p>Morris, Leon. <em>Theories of the atonement by Leon Morris.</em> n.d.
+https://www.monergism.com/thethreshold/articles/onsite/atonementmorris2.html
+(accessed April 24, 2022).</p>
+<p>Nyssa, Gregory of. <em>Gregory of Nyssa: The Great Catechism.</em>
+n.d.
+https://orthodoxchurchfathers.com/fathers/npnf205/npnf2038.htm#P3801_2491373
+(accessed April 27, 2022).</p>
+<p>Scanlin, Harold P., et al. "Dictionary of Biblical Languages with
+Semantic Domains: Greek (New Testament), electronic ed. Oak Harbor:
+Logos Research Systems, Inc." Oak Harbor, WA: Logos Research Systems,
+1997.</p>
+<p>Schmidt, Thomas E. "Taxation, Jewish." In <em>Dictionary of New
+Testament Background: A Compendium of Contemporary Biblical
+Scholarship</em>, edited by Craig A. Evans, &amp; Stanley E. Porter,
+1166. Downers Grove, IL, 2000.</p>
+<p>Sproul, R. C., ed. <em>The Reformation Study Bible: English Standard
+Version.</em> Edited by R. C. Sproul. Orlando, FL: Reformation Trust,
+2015.</p>
+<p>Strong, James. <em>The New Strong’s Dictionary of Hebrew and Greek
+Words.</em> Nashville: Thomas Nelson, 1996.</p>
+<p>Tan, Randle K., David A. deSilva, and Isaiah Hoog. <em>The Lexham
+Greek-English Interlinear Septuagint.</em> H.B. Swete. Bellingham, WA:
+Lexham Press, 2012.</p>
+<p><em>The Temple Tax Story: Understanding Yeshua's Sense of Humor.</em>
+July 9, 2020.
+https://seekingspiritualitysite.com/2020/07/09/the-temple-tax-story-understanding-yeshuas-sense-of-humor/
+(accessed May 11, 2022).</p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Amos 4:2, Isa. 19:8, Hab. 1:15, Job. 41:1, Matt. 17:27<a
+href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Note that many English translations use the word “line”
+or “hook” and not fishhook. However, the original Greek manuscripts,
+e.g., Byzantine, Sinaiticus use the Greek word, ἄγκιστρον, meaning
+fishhook (Byzantine Textform 2005, with Morphology. 2006. 2006) (Codex
+Sinaiticus: Septuagint and New Testament. Cambridge 2012).<a
+href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Unless otherwise noted, all Scripture references are
+taken from the ESV.<a href="#fnref3" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Thus this pericope would fall into the hypothetical “M”
+source of the Oxford Hypothesis (B.H.Streeter) also known as the
+Two/Four Source Hypothesis.<a href="#fnref4" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Prediction, prophecy<a href="#fnref5"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>Robert Jamieson, A. R. Fausset, and David Brown,
+Commentary Critical and Explanatory on the Whole Bible (Oak Harbor, WA:
+Logos Research Systems, Inc., 1997), 49.<a href="#fnref6"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>Hebrew: <span dir="rtl"><strong>כֹּפֶר</strong></span>
+kôpher, ko’-fer; <em>When translated as ransom, it often means a price
+for a life.</em> James Strong, The New Strong’s Dictionary of Hebrew and
+Greek Words (Nashville: Thomas Nelson, 1996), 3724.<a href="#fnref7"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p><strong><span dir="rtl">כָּפַר</span></strong> kâphar,
+kaw-far’; fig. to expiate or condone, to placate or cancel:— appease,
+make (an atonement, cleanse, disannul, forgive, be merciful, pacify,
+pardon, to pitch, purge (away), put off, (make) reconcile (-liation).
+James Strong, The New Strong’s Dictionary of Hebrew and Greek Words
+(Nashville: Thomas Nelson, 1996), 3722.<a href="#fnref8"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>Life - Septuigant: <strong>ψυχῆς
+(</strong><em>psychē</em>), soul, inner self, mind. Randall Tan, et.
+al., The Lexham Greek-English Interlinear Septuagint (C Bellingham:
+Lexham Press, 2012), 262.<a href="#fnref9" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p>Note that when the people of Israel returned to
+Jerusalem from exile, they reinstituted the compulsory annual temple tax
+and lowered it to a third of a shekel (Neh. 10:32) The Reformation Study
+Bible commentary states that the difference could be from the use of a
+new monetary system under the Persians, or it could be a concession to
+the hard economic times. (The Reformation Study Bible: English Standard
+Version 2015)<a href="#fnref10" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p>It is interesting that priests and rabbis were exempt
+from paying the temple tax. See Thomas E. Schmidt, Taxation, Jewish,”
+Dictionary of New Testament Background: A Compendium of Contemporary
+Biblical Scholarship (Downers Grove, IL: InterVarsity Press, 2000),
+1166. Also, the Sadducees (the Kohanim) were exempt from the tax. See
+Seeking Spirituality,” The Temple Tax Story: Understanding Yeshua's
+Sense of Humor”,
+https://seekingspiritualitysite.com/2020/07/09/the-temple-tax-story-understanding-yeshuas-sense-of-humor/
+(accessed May 11, 2022). The thrust of the current temple tax narrative
+points towards how Jesus will turn this whole system on its head.<a
+href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn12"><p>Others – Greek: <strong>ἀλλότριος</strong><sup>b</sup>,
+<strong>α</strong>, <strong>ον</strong>: a person from another
+geographical or cultural region and/or one not known to members of the
+socio-political group in question— ‘stranger, foreigner.’<a
+href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13"><p>Ethelbert W. Bullinger, A Critical Lexicon and
+Concordance to the English and Greek New Testament (London: Longmans,
+Green, &amp; Co., 1908), 547.<a href="#fnref13" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn14"><p>In John 2:19-22, Jesus tells the Jews, “Destroy this
+temple, and in three days I will raise it up”. The disciples did not
+understand this until after Jesus’ resurrection. Also, John 1:14 states
+that the Word became flesh and dwelt among us. The word <em>dwelt</em>
+is translated from the Greek word, σκηνόω, which means <em>tented</em>
+or <em>tabernacled</em> alluding to the mobile nature of the Old
+Testament tabernacle or tent of meeting ( Theological Dictionary of the
+New Testament 1964).<a href="#fnref14" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn15"><p>ἄγκιστρον (agkistron), ου (ou), τό (to): n.neu.; ≡ Str
+44—LN 6.10 fish hook, with, of course, a line on it for retrieving the
+catch (Mt 17:27+) James Swanson, Dictionary of Biblical Languages with
+Semantic Domains: Greek (New Testament) (Oak Harbor: Logos Research
+Systems, Inc., 1997).<a href="#fnref15" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn16"><p>In biblical times, fishhooks were curved or bent
+devices made of bone or iron tied to a line that fishermen cast into the
+water to catch fish (Brand 2003). The Zondervan Illustrated Commentary
+of the NT states “Interestingly, fishhooks were found beneath one of the
+upper pavements in the floor at the site of the ancient excavation
+believed to be Peter’s home in Capernaum. Although line and hook were
+used regularly for fishing on the Sea of Galilee, nets were the most
+effective means of commercial fishing.” (Zondervan Illustrated
+Commentary of NT 2019)<a href="#fnref16" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn17"><p>It should be noted that some expositors of this
+narrative do not accept the view that a miracle took place. For example,
+see Seeking Spirituality,” The Temple Tax Story: Understanding Yeshua's
+Sense of Humor”,
+https://seekingspiritualitysite.com/2020/07/09/the-temple-tax-story-understanding-yeshuas-sense-of-humor/
+(accessed May 11, 2022). This paper assumes the majority view that the
+catch of the coin-bearing fish was divinely orchestrated by God.<a
+href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn18"><p>A literal rendering of Mt 17:27 could be quite
+misleading, since it would imply that only the hook was thrown into the
+water. What was thrown into the water was a line with a baited hook on
+the end, and it may be necessary to be explicit in some languages in
+order to avoid misunderstanding. Johannes P. Louw and Eugene Albert
+Nida, Greek-English Lexicon of the New Testament: Based on Semantic
+Domains (New York: United Bible Societies, 1996) 53–54.<a
+href="#fnref18" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn19"><p>In the ancient Near Eastern world, snakes were
+variously symbolic of life, wisdom, and chaos. Undoubtedly, this talking
+serpent is unique and, given his anti-God disposition, is no common
+snake. While Gen. 3:1 provides no explanation as to the origin of this
+extraordinary creature, later biblical writings reveal that this serpent
+is an incarnation of Satan, the adversary (Rev. 12:9; 20:2). See v. 15
+note; “Satan” at Job 1:6. The existence of the serpent reveals that evil
+already existed prior to the disobedience of Adam and Eve. This may
+explain why Adam is instructed to “guard” the garden sanctuary (2:15)
+(The Reformation Study Bible: English Standard Version 2015).<a
+href="#fnref19" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn20"><p>See The Parable of the Pearl Merchant (Matt. 13:48-49)
+- Some interpreters of this parable see the kingdom as a merchant who
+sold everything to possess the pearl of great value signifying Jesus
+giving up everything, including his life, to redeem his people.<a
+href="#fnref20" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn21"><p>Daniel Sarlo, “Sea,” ed. John D. Barry et al., The
+Lexham Bible Dictionary (Bellingham, WA: Lexham Press, 2016).<a
+href="#fnref21" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn22"><p>See Matt. 12:38-45, “Sign of Jonah”.<a href="#fnref22"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn23"><p>See Green, Ignatius. “Introduction.” In Catechetical
+Discourse: A Handbook for Catechists, edited by John Behr, translated by
+Ignatius Green, 60:18. Popular Patristics Series. Yonkers, NY: St
+Vladimir’s Seminary Press, 2019.<a href="#fnref23" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn24"><p>Note that the “Fishhook Theory of Atonement” is one
+among many theories of atonement. Leon Morris summarizes some of them
+here - “Theories of the atonement by Leon Morris”, Monergism, <a
+href="https://www.monergism.com/thethreshold/articles/onsite/atonementmorris2.html">https://www.monergism.com/thethreshold/articles/onsite/atonementmorris2.html</a>
+(accessed April 24, 2022). Among them are The Subjective View or Moral
+Influence Theory, The Atonement as Victory, Anselm's Satisfaction
+Theory, Penal Substitution, Sacrifice, and Governmental Theory. The
+Fishhook Theory falls under the umbrella of The Atonement as Victory
+Theory.<a href="#fnref24" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn25"><p>Gregory of Nyssa, Catechetical Discourse: A Handbook
+for Catechists, ed. John Behr, trans. Ignatius Green, vol. 60, Popular
+Patristics Series (Yonkers, NY: St Vladimir’s Seminary Press, 2019),
+115.<a href="#fnref25" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn26"><p>Greek: ἀγαπάω (agape) Greater love has no one than
+this, that someone lay down his life for his friends (John 15:13). In
+the act of sacrificially laying down his life via suffering on the
+cross, Jesus is setting the example for his disciples.<a href="#fnref26"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn27"><p>Note that this theory has both critics and supporters.
+Nicholas P. Costas lists among its detractors J.A. MacCullough, Gustaf
+Aulén, George Florovsky, Reinhold Niebuhr, Cyril Richardson, Frances
+Young, Richard Jakob Kees, and Anthony Meredith. Among the supporters
+are Athanasius, John Chrysostom, John of Damascus, Maximus the
+Confessor, as well as the Orthodox Church as attested to in its
+liturgical texts. Constas, Nicholas P., "The Last Temptation of Satan:
+Divine Deception in Greek Patristic Interpretations of the Passion
+Narrative." The Harvard Theological Review, Apr 2004: 139-163.<a
+href="#fnref27" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn28"><p>Dallas G. Denery II, The Devil Wins: A History of Lying
+from the Garden Of Eden to the Enlightenment (Princeton: Princeton
+University Press, 2015), 77.<a href="#fnref28" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn29"><p>Note that persecution is never something sought by a
+Christian. It is the by-product of seeking first the kingdom of God
+rather than the privileges of the world. Skye Jethani, What If Jesus Was
+Serious? A Visual Guide to the Teachings of Jesus We Love to Ignore
+(Chicago, IL: Moody Publishers, 2020), 34.<a href="#fnref29"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn30"><p>A classic example of the Fishhook Strategy is described
+in Acts 16:16-34 where Paul and Silas are beaten and thrown in prison
+for exorcising a demon from a fortune-telling female slave and rejoiced
+in their suffering after which an earthquake frees them but they stay
+for the sake of the jailer’s life and his salvation (and his family’s
+too).<a href="#fnref30" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn31"><p>This same word is used in Acts 26:23 - <em>first to
+rise from the dead</em>. Another apropos example of where prōto is used
+is Col. 1:18 - <em>firstborn from the dead</em>. The Greek word for
+firstborn is πρωτότοκος (prōtotokos) (Greek-English Lexicon of the New
+Testament: Based on Semantic Domains 1996)<a href="#fnref31"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+<p>E KNOX THEOLOGICAL SEMINARY</p>
+<p>WHY THE FISHHOOK?</p>
+<p>SUBMITTED TO DR. SAM LAMERSON</p>
+<p>IN PARTIAL FULFILLMENT OF</p>
+<p>NT 502: NEW TESTAMENT SURVEY: GOSPELS, LIFE OF CHRIST, AND ACTS</p>
+<p>BY</p>
+<p>DOUGLAS ROTHAUSER</p>
+<p>APRIL 27, 2022</p>
+<p>WORD COUNT: 3933</p>
+</body>
+</html>

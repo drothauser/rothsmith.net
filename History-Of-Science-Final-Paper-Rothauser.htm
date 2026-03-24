@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>History-Of-Science-Final-Paper-Rothauser</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a
+href="#the-philosophical-foundations-of-modern-software-engineering"
+id="toc-the-philosophical-foundations-of-modern-software-engineering">THE
+PHILOSOPHICAL FOUNDATIONS OF MODERN SOFTWARE ENGINEERING</a>
+<ul>
+<li><a href="#metaphysics-and-computer-software-design"
+id="toc-metaphysics-and-computer-software-design">Metaphysics and
+Computer Software Design</a></li>
+<li><a href="#being-and-becoming" id="toc-being-and-becoming">Being and
+Becoming</a></li>
+<li><a href="#plato-and-object-oriented-programming"
+id="toc-plato-and-object-oriented-programming">Plato and Object Oriented
+Programming</a></li>
+<li><a href="#aristotles-four-causes-and-software-engineering"
+id="toc-aristotles-four-causes-and-software-engineering">Aristotle’s
+Four Causes and Software Engineering</a></li>
+<li><a href="#aristotles-hylomorphism-in-software-design"
+id="toc-aristotles-hylomorphism-in-software-design">Aristotle’s
+Hylomorphism in Software Design </a></li>
+<li><a href="#aristotle-and-functional-programming"
+id="toc-aristotle-and-functional-programming">Aristotle and Functional
+Programming</a></li>
+<li><a href="#summary" id="toc-summary">Summary</a></li>
+</ul></li>
+<li><a href="#bibliography" id="toc-bibliography">Bibliography</a></li>
+</ul>
+</nav>
+<h1
+id="the-philosophical-foundations-of-modern-software-engineering">THE
+PHILOSOPHICAL FOUNDATIONS OF MODERN SOFTWARE ENGINEERING</h1>
+<p>In the study of the history of science, it is amazing to see how much
+modern theoretic thought is influenced in one way or another by ancient
+Greek philosophy. For example, many elements of Platonic and
+Aristotelian natural philosophy find themselves integrally engaged in
+the field of computer science, especially in the art of software
+engineering. In this paper, I will argue that the philosophical systems
+that Plato and Aristotle developed over 2,500 years ago laid the
+foundations for modern software engineering and are still relevant to
+today’s programming paradigms and will remain relevant as the computer
+sciences advance into the frontiers of cyberspace.</p>
+<h2 id="metaphysics-and-computer-software-design">Metaphysics and
+Computer Software Design</h2>
+<p>Metaphysics is the branch of philosophy that examines the fundamental
+assumptions and ideas that frame how we understand reality. Though
+metaphysics should be an essential component in any worldview, the
+science behind today’s methodological naturalism worldview discounts the
+value of metaphysics and resists metaphysical exploration<a href="#fn1"
+class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.
+However, in the computer sciences, there is no escaping metaphysics.
+When software engineers embark on the task of designing and developing a
+software system, they will soon find themselves ensconced in the world
+of metaphysics, whether they realize it or not.</p>
+<h2 id="being-and-becoming">Being and Becoming</h2>
+<p>When considering matters of reality, one of the thorniest conundrums
+for natural philosophers to solve was how to reconcile the metaphysics
+of being (essence, actuality, ontology) and becoming (phenomena,
+potentiality). Even before Plato and Aristotle, philosophers were
+grappling with these metaphysical issues. Heraclitus (fl. 500 BC)
+believed that all things are in a state of <em><u>becoming</u></em>,
+arguing that you cannot step into the same river twice. Heraclitus’
+younger contemporary, Parmenides (fl. 480 BC), disagreed. His axiom is
+“whatever is, is,” meaning that everything is in a state of
+<em><u>being</u></em>. Parmenides’ pupil, Zeno of Elea (fl. 450), sought
+to defend his teacher, formulating his famous paradoxes to argue that
+change (i.e., <em>becoming</em>) is illusory.<a href="#fn2"
+class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<p>Plato sought to resolve the conflict between being and becoming with
+his Theory of Forms (sometimes referred to as the Theory of Ideas). He
+conceived of two worlds: a metaphysical world and a physical world. The
+metaphysical world is the realm of ultimate reality where things exist
+as nonmaterial <em>ideas</em> or <em>forms</em> in true immutable
+perfection. It is in this realm that things have their ultimate
+<em>being</em>. On the other hand, things that exist in the material
+world are only mere copies of their perfect form from the “real”
+metaphysical world. As such, the material stuff from which a thing is
+made is subject to change and is always in a state of becoming.<a
+href="#fn3" class="footnote-ref" id="fnref3"
+role="doc-noteref"><sup>3</sup></a></p>
+<p>Related to being and becoming is the Aristotelian notion of “cause,”
+which, when used in metaphysics, is understood as that which is
+responsible for a thing coming into <em>being</em> and for its
+<em>becoming</em>. The modern software engineer must also consider these
+matters as they carefully design their system, for its components must
+also manifest both <em>being</em> and <em>becoming</em>.</p>
+<h2 id="plato-and-object-oriented-programming">Plato and Object Oriented
+Programming</h2>
+<p>With these metaphysical concepts in mind, let us turn to a common
+style of software development known as Object Oriented Programming
+(OOP). OOP is a programming paradigm<a href="#fn4" class="footnote-ref"
+id="fnref4" role="doc-noteref"><sup>4</sup></a> that relies on the
+concept of classes, attributes, methods, and objects. Classes serve as
+blueprints or templates for creating “objects” capable of running in a
+computer system. Note that a single class can be used to create multiple
+object instances (similar to the Platonic concept of <em>universals and
+particulars</em>). The definition of a class typically includes
+attributes or properties that maintain the internal state of an
+instantiated object. A class also contains methods that define how it
+will govern the state of its properties as well as how it will interact
+with other objects.</p>
+<p>Employing Plato’s <em>Theory of Forms</em>, a class correlates with
+an immutable, perfect Form<a href="#fn5" class="footnote-ref"
+id="fnref5" role="doc-noteref"><sup>5</sup></a>. Just like a Form that
+finds its <em>being</em> in the metaphysical perfect world of ideas, a
+class finds its <em>being</em> in the unchanging realm of class
+storage<a href="#fn6" class="footnote-ref" id="fnref6"
+role="doc-noteref"><sup>6</sup></a>. Here is where the unmistakable
+similarity between Plato’s Forms and OOP is seen. Plato thought that the
+phenomena of a Form’s instance in the material world (an object) is a
+mere shadow that mirrored the Form<a href="#fn7" class="footnote-ref"
+id="fnref7" role="doc-noteref"><sup>7</sup></a>. Further, objects in the
+material world are finite and physical manifestations of the Form and,
+because of varying circumstances, are in a constant state of change,
+i.e., in a <em>state of becoming</em>. Where Forms are unqualified
+perfection, physical material objects are qualified and conditioned<a
+href="#fn8" class="footnote-ref" id="fnref8"
+role="doc-noteref"><sup>8</sup></a>. Conceptually, OOP is the same. When
+an OOP program creates an object instance from a class, it now finds its
+<em>being</em> in the physical world of the computer’s execution
+environment and, like Plato’s instance of a Form, is also subject to
+varying circumstances causing constant change, i.e., it is always in a
+<em>state of becoming</em>.</p>
+<p>Another Platonic concept borrowed by OOP is that of the
+“<em>universals and particulars</em>.” For Plato, a Form exists as a
+singularity in the metaphysical world of Ideas; thus, it is
+<em>universal</em>. However, there could be multiple physical instances
+of that Form in the physical world. Plato calls these
+<em>particulars</em>. For example, in the world of Forms, a single ideal
+chair exists but in the material world, many physical chairs exist as
+<em>particular</em> instances. OOP adopts the same concept. Each class
+in an OOP application must be unique and thus universal within its
+computing environment. However, many different (particular) object
+instances can be created from it, each with its own identity and
+operating state.</p>
+<h2 id="aristotles-four-causes-and-software-engineering">Aristotle’s
+Four Causes and Software Engineering</h2>
+<p>Now let us turn our attention to Aristotle’s doctrine of the four
+causes<a href="#fn9" class="footnote-ref" id="fnref9"
+role="doc-noteref"><sup>9</sup></a> and how they relate to software
+engineering. For Aristotle, it was the sine qua non to answer the
+question “why” when addressing the metaphysical questions of
+<em>being</em> and <em>becoming</em>. To structure cogent, commonsense
+answers to these questions, Aristotle provides the following four
+causes: 1) the material cause - the stuff a thing is made of; 2) the
+formal cause - that which defines what a thing is; 3) the efficient
+cause – that by which a thing comes into being and 4) the final cause –
+the ultimate purpose for a thing’s being<a href="#fn10"
+class="footnote-ref" id="fnref10"
+role="doc-noteref"><sup>10</sup></a>.</p>
+<p>In software engineering, these causes present themselves as follows:
+The material cause is the technological stuff the system is made of, for
+example, the bits and bytes of software instructions and data. The
+efficient cause is a software engineer or a team of software engineers.
+The formal cause is the design of the system, for example, the OOP class
+definition discussed above. The final cause embodies the purpose or the
+teleology of the system. For example, the purpose of Faithlife’s Logos
+platform is to “deepen your Bible study.”<a href="#fn11"
+class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a>
+Note that in modern science, final and formal causes are generally
+considered out of bounds because they tend to appeal to metaphysical
+concepts that are difficult to falsify<a href="#fn12"
+class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a>.
+In contrast, computer science heavily depends on the formal and final
+causes.</p>
+<h2 id="aristotles-hylomorphism-in-software-design">Aristotle’s
+Hylomorphism in Software Design </h2>
+<p>Another Aristotelian metaphysical theory borrowed by software
+engineers is “hylomorphism” (hyle = matter, morphē = form)<a
+href="#fn13" class="footnote-ref" id="fnref13"
+role="doc-noteref"><sup>13</sup></a>. Hylomorphism is the doctrine of
+the transfer from the potentiality of primary matter to the actuality of
+substantial form.<a href="#fn14" class="footnote-ref" id="fnref14"
+role="doc-noteref"><sup>14</sup></a> Hylomorphism assumes a tight
+coupling of the formal cause and material cause, where the form of a
+thing determines its materiality. Aristotle calls this entelechy, and it
+is the teleological force that governs its hylomorphism (actuality and
+potentiality)<a href="#fn15" class="footnote-ref" id="fnref15"
+role="doc-noteref"><sup>15</sup></a>. The classic example of the oak
+tree illustrates this concept where an acorn has within its
+<em>being</em>, according to its entelechy, the potentiality to
+<em>become</em> an oak tree in actuality. Note that the acorn and the
+oak tree share the same entelechy.</p>
+<p>Applying this concept to a software system, a component<a
+href="#fn16" class="footnote-ref" id="fnref16"
+role="doc-noteref"><sup>16</sup></a> is usually designed to maintain its
+internal state via mutable properties or variables (or, in Aristotelian
+parlance, <em>accidents</em>). In this way, it is endowed with
+hylomorphic capability, which governs its potential to actualize a
+change within its internal state. Hylomorphism occurs once the component
+is loaded into the computer’s memory and begins to function. For
+example, imagine a type of component storing information about a student
+at Knox Theological Seminary. The component will assume the form of
+“Student” and contain many properties associated with the student, one
+of them being “Degree_Program.”<a href="#fn17" class="footnote-ref"
+id="fnref17" role="doc-noteref"><sup>17</sup></a> When a student enters
+the seminary, the “Degree_Program” property possesses the
+<em>potentiality</em> to become MABTS, MDiv, MACCS, or DMin. After the
+student decides what program to enroll in, the “Degree_Program” property
+becomes <em>actualized</em> with the choice. However, the
+“Degree_Program” property still has the <em>potentiality</em> to become
+another value, for example, when a student graduates from the MDiv
+program and decides to pursue the DMin degree. This pattern is an
+example of what is known as the “Potentiality-Actuality / One-Two
+Model.”<a href="#fn18" class="footnote-ref" id="fnref18"
+role="doc-noteref"><sup>18</sup></a> First, a thing starts with the
+potential to become something. When that potential is actualized, a
+second new <em>potentiality-to-actuality</em> event occurs, and that
+cycle continues as necessary per formal and final causes.</p>
+<h2 id="aristotle-and-functional-programming">Aristotle and Functional
+Programming</h2>
+<p>The principles of Aristotle’s hylomorphism are foundational to the
+programming style known as <em>Functional Programming</em>. Functional
+Programming (FP) is another programming paradigm that focuses on
+transforming data from states of <em>potentiality</em> to
+<em>actuality</em> using functions. A function is an encapsulated set of
+one or more operations for <em>transmuting</em> inputs directly to
+outputs. For example, consider the following square root function:
+<em>sqrt</em>(49) = 7. Here, the function is interested in the potential
+of the numeric argument to become its square root.</p>
+<h2 id="summary">Summary</h2>
+<p>The metaphysics of Plato and Aristotle have greatly influenced modern
+computer science, especially in the realm of software engineering, so
+much so that software engineers tacitly assume them. For example, no
+rational software engineer would consider developing a system without
+first considering its purpose (<em>final cause</em>) and its design
+(<em>formal cause</em>). In other sciences, such as biology, the formal
+and final causes are largely downplayed because, per Francis Bacon and
+his successors, design and purpose belong to the metaphysical realm<a
+href="#fn19" class="footnote-ref" id="fnref19"
+role="doc-noteref"><sup>19</sup></a> and, as such, are speculative and
+unverifiable. It is ironic then that atheistic scientists who subscribe
+to modern evolutionary theory would trust a computer that clearly has
+design and purpose even though it was created by humans who evolved with
+no design or purpose. Oxford professor of mathematics and science, John
+Lennox, puts it this way:</p>
+<blockquote>
+<p>As a scientist, the very bottom line for me is that atheism doesn’t
+even give me a reason to trust the mind with which I do science because
+it tells me that the mind with which I’m doing science is essentially
+equal to the brain and the brain is the end product of a mindless,
+unguided process. Well no scientist I have ever asked would trust a
+computer if he or she thought it was the end product of a mindless,
+unguided process.<a href="#fn20" class="footnote-ref" id="fnref20"
+role="doc-noteref"><sup>20</sup></a></p>
+</blockquote>
+<p>Consider this analogy: Just as God, the Logos, created an
+intelligible universe that is real, rational, regular, comprehensible,
+and good<a href="#fn21" class="footnote-ref" id="fnref21"
+role="doc-noteref"><sup>21</sup></a> - software engineers, created in
+God’s image, mirror their creator (<em>universal-particulars</em>) as
+they design (<em>formal cause</em>) and develop (<em>efficient
+cause</em>) technological ecosystems where digital organisms manifest
+being (<em>actuality</em>) and becoming (<em>potentiality</em>) not as
+combinations of carbon-based ATCG nucleotides but as bytes of 1 and 0’s
+(<em>material cause</em>), all for the purpose of providing a useful
+software system (<em>final cause</em>).</p>
+<p>In conclusion, perhaps through the inspiration of the computer
+sciences and its philosophical foundations, modern science will once
+again elevate the formal and final causes to primacy within its own
+philosophical systems, motivated by the desire to “think God’s thoughts
+after him”<a href="#fn22" class="footnote-ref" id="fnref22"
+role="doc-noteref"><sup>22</sup></a> for the ultimate purpose of
+glorifying God.</p>
+<h1 id="bibliography">Bibliography</h1>
+<p>Butcher, Matt. <em>How the Ancient Greeks Invented Programming.</em>
+Sep 24, 2012.
+https://www.infoq.com/presentations/Philosophy-Programming/ (accessed
+Aug 12, 2022).</p>
+<p>DeMar, Gary, ed. <em>Pushing the Antithesis: The Apologetic
+Methodology of Greg L. Bahnsen.</em> Powder Springs, GA: American
+Vision, 2007.</p>
+<p>Fields, Alex. <em>The Four Causes of Technology.</em> Feb 2, 2017.
+https://www.itpromentor.com/four-causes/ (accessed 08 16, 2022).</p>
+<p><em>Hylomorphism.</em> Mar 15, 2016.
+https://www.britannica.com/topic/hylomorphism (accessed Aug 11,
+2022).</p>
+<p>Lindberg, David C. <em>The Beginnings of Western Science.</em>
+Chicago : University of Chicago Press, 2007.</p>
+<p>Morris, Iain. <em>INTERVIEW | PROF JOHN LENNOX WITH IAIN MORRIS.</em>
+Jun 01, 2021.
+https://www.lausanneeurope.org/interview-prof-john-lennox-by-iain-morris/
+(accessed Aug 18, 2022).</p>
+<p>Rayside, Derick, and T. Gerald Campbell. “Aristotle and
+object-oriented programming: why modern students need traditional
+logic.” <em>Semantic Scholar.</em> 3 1, 2000.
+https://www.semanticscholar.org/paper/Aristotle-and-object-oriented-programming%3A-why-need-Rayside-Campbell/ff18658ab2ee6b9dc2ac3aa897bb9df7d1296bb5
+(accessed 08 12, 2022).</p>
+<p>Sansbury, Timothy. <em>Module 1 Reading and Video Lectures, Lesson
+05.</em> February 1, 2021.
+https://learn.knoxseminary.edu/mod/page/view.php?id=41485 (accessed June
+26, 2022).</p>
+<p>Sproul, R.C. <em>The Consequences of Ideas: Understanding The
+Concepts That Shaped Our World.</em> Wheaton, IL: Crossway Books,
+2000.</p>
+<p>Wilber, Jennifer. <em>An Introduction to Plato’s Theory of
+Forms.</em> 076 28, 2022.
+https://owlcation.com/humanities/An-Introduction-to-Platos-Theory-of-Forms
+(accessed 08 17, 2022).</p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>See DeMar, Gary, ed. Pushing the Antithesis: The
+Apologetic Methodology of Greg L. Bahnsen. (Powder Springs, GA: American
+Vision, 2007), 111. This bias was especially evident with the Logical
+Positivists and still exists today (e.g., worldviews that posit reality
+cannot be known).<a href="#fnref1" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Sproul, R. C. The Consequences of Ideas: Understanding
+the Concepts that Shaped Our World (Crossway Books, 2000), 20-24.<a
+href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Ibid, p. 33-36.<a href="#fnref3" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>It is noteworthy that Object Oriented Programming is
+considered a paradigm. It is like a worldview in the computer
+programming field. Prior to OOP, one of the most prevalent paradigms was
+procedural programming. New programming paradigms continue to emerge,
+for example, Functional Programming. Note that just like with
+worldviews, some software engineers tend to be religious about their
+paradigms.<a href="#fnref4" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Note that Form is capitalized here to denote Plato’s
+Form as opposed to Aristotle’s form (lowercase l).<a href="#fnref5"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>The OOP programming language, Java, calls this storage
+“Metaspace.” This is a difference between Plato’s Form Theory and OOP. A
+Form is an immaterial idea (incorporeal). A class is a material
+(corporeal) entity existing in a digital format.<a href="#fnref6"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>This is derived from Plato’s Allegory of the Cave (The
+Republic).<a href="#fnref7" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>Wilber, J., “An Introduction to Plato’s Theory of
+Forms,” Owlcation,
+https://owlcation.com/humanities/An-Introduction-to-Platos-Theory-of-Forms
+(accessed August 17, 2022)<a href="#fnref8" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>Aristotle describes these causes in his work <em>The
+Metaphysics</em>.<a href="#fnref9" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p>Sproul, R. C. The Consequences of Ideas: Understanding
+the Concepts that Shaped Our World (Crossway Books, 2000), 48-49.<a
+href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li
+id="fn11"><p>https://www.logos.com/grow/what-is-logos-bible-software/<a
+href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn12"><p>I.e., they cannot be tested and verified empirically.
+Formal and final causes attempt to answer the question “why?” which are
+metaphysical concerns. For example, the question of why we see the
+design in nature (e.g., DNA) is off limits because any answer to that
+alludes to a divine designer with a rational mind, and that cannot be
+falsified. The same goes for the question of purpose, the final cause.<a
+href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13"><p>David C. Lindberg, The Beginnings of Western Science
+(Chicago: University of Chicago Press, 2007), 47, 373n4<a
+href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn14"><p>Britannica, <em>Hylomorphism</em>,
+https://www.britannica.com/topic/hylomorphism (accessed August 11,
+2022).<a href="#fnref14" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn15"><p>Sproul, R. C. The Consequences of Ideas: Understanding
+the Concepts that Shaped Our World (Crossway Books, 2000), 47.<a
+href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn16"><p>A software component is a kind of digital organism
+embodying form, behavior, and state. An object in object-oriented
+programming or a function in Functional Programming can be considered a
+component of a computing system.<a href="#fnref16" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn17"><p>The computer sees this component in the <em>form</em>
+of a <em>data structure</em> roughly analogous to a paper form one might
+store in a filing cabinet.<a href="#fnref17" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn18"><p>Butcher, M., “How the Ancient Greeks Invented
+Programming,” InfoQ,
+https://www.infoq.com/presentations/Philosophy-Programming, (accessed
+August 11, 2022).<a href="#fnref18" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn19"><p>Francis Bacon states in his <em>The Advancement of
+Learning</em>, “As we divided natural philosophy in general into the
+inquiry of causes, and productions of effects: so that part which
+concerneth the inquiry of causes we do subdivide according to the
+received and sound division of causes. The one part, which is physic,
+inquireth and handleth the material and efficient causes; and the other,
+which is metaphysic, handleth the formal and final causes.”<a
+href="#fnref19" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn20"><p>Morris, I., “INTERVIEW | PROF JOHN LENNOX WITH IAIN
+MORRIS,” Lausanne Movement Europe,
+https://www.lausanneeurope.org/interview-prof-john-lennox-by-iain-morris/,
+(accessed August 18, 2022).<a href="#fnref20" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn21"><p>Sansbury, Timothy. Module 1 Reading and Video Lectures,
+Lesson 05. February 1, 2021.
+https://learn.knoxseminary.edu/mod/page/view.php?id=41485 (accessed June
+26, 2022).<a href="#fnref21" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn22"><p>“O, Almighty God, I am thinking Thy thoughts after
+Thee!” wrote astronomer Johannes Kepler, 1619, The Harmonies of the
+World.<a href="#fnref22" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+<p>KNOX THEOLOGICAL SEMINARY</p>
+<p>FINAL PAPER</p>
+<p>THE PHILOSOPHICAL FOUNDATIONS OF MODERN SOFTWARE ENGINEERING</p>
+<p>SUBMITTED TO DR. TIMOTHY SANSBURY</p>
+<p>IN PARTIAL FULFILLMENT OF</p>
+<p>CC602 HISTORY OF SCIENCE (SU2022)</p>
+<p>BY</p>
+<p>DOUGLAS ROTHAUSER</p>
+<p>AUGUST 24, 2022</p>
+<p>WORD COUNT: 1917</p>
+</body>
+</html>
